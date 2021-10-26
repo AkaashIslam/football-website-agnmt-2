@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*----------------------------------
+        Custom Styles    
+------------------------------------*/
+
+::after, ::before, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  transition: all .5s linear;
+  overflow-x: hidden;
+  clear: both;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+/*----------------------------------
+        Header Styles start    
+------------------------------------*/
+
+.mainHeader {
+  background-color: #102897;
+  height: 100vh;
+  margin-bottom: 7rem;
+}
+.mainHeader .heroMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12%;
+}
+
+.mainHeader .heroMain .hero__content {
+  animation: right 5s ease-in-out;
+  position: relative;
+}
+
+.mainHeader .heroMain .hero__content h1 {
+  margin-bottom: 2.7rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 8rem;
+  color: #ffffff;
+}
+
+.mainHeader .heroMain .hero__content .btn {
+  padding: 1rem 2.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #E02C6D;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+
+.mainHeader .heroMain .hero__content .btn .right {
+  margin-left: 1rem;
+}
+
+.mainHeader .heroMain .hero__content .btn:hover {
+  background-color: #E02C6D;
+  color: #000000;
+}
+
+@keyframes right {
+  0% {
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.mainHeader .heroMain .hero__thumbnail {
+  margin-top: 6.7rem;
+}
+
+.mainHeader .heroMain .hero__thumbnail img {
+  width: 556px;
+  animation: upper 5s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes upper {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+label {
+  margin: 0 4rem 0 0;
+  font-size: 2.6rem;
+  line-height: 7rem;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+/*----------------------------------
+        Player Styles    
+------------------------------------*/
+
+.main {
+  background-color: #fffffe;
+  height: 100vh;
+  /*----------------------------------
+            Highlights Styles    
+    ------------------------------------*/
+  /*----------------------------------
+            Gallery Styles    
+    ------------------------------------*/
+  /*-------------------------------
+        Footer Area Styles
+--------------------------------*/
+}
+
+.main .playerBoxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.main .playerBoxes .player_box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 0.1rem solid #fffffe;
+  padding: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main .playerBoxes .player_box img {
+  width: 100%;
+  height: 256px;
+  border: 0.3rem solid #232946;
+}
+
+.main .playerBoxes .player_box h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: #121629;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0;
+  margin-top: 1.6rem;
+}
+
+.main .playerBoxes .player_box p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  font-family: "Poppins", sans-serif;
+  color: #6C6C6C;
+  margin-bottom: 3.3rem;
+}
+
+.main .highlights {
+  padding-top: 16.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 6.6rem;
+  align-items: center;
+}
+
+.main .highlights .highlights__content h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  line-height: 6rem;
+  color: #121629;
+}
+
+.main .highlights .highlights__content p {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #6C6C6C;
+  margin-bottom: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.main .highlights .highlights__content .btn {
+  padding: 1rem 2.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #E02C6D;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all .5s linear;
+}
+.main .highlights .highlights__content .btn:hover{
+  background-color: #E02C6D;
+  color: #000000;
+}
+.main .highlights .highlights__content .btn .right{
+  margin-left: 1rem;
+}
+
+.main .highlights .highlights__img img {
+  width: 100%;
+  height: 424px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main .gallery_main .playersGallery {
+  height: 100vh;
+  padding-bottom: 12rem;
+}
+
+.main .gallery_main .playersGallery h2 {
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  font-size: 4.8rem;
+}
+
+.main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 img {
+  border: 0.5rem solid #b8c1ec;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  width: 100%;
+  height: 250px;
+}
+
+.main .gallery_main .playersGallery .img__gallery-2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 3rem;
+}
+
+.main .gallery_main .playersGallery .img__gallery-2 img {
+  margin-bottom: 12rem;
+  border: 0.5rem solid #b8c1ec;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  height: 150px;
+  width: 100%;
+}
+
+/*-------------------------------
+        Footer Area Styles
+--------------------------------*/
+
+.footerContent {
+  margin-top: 12rem;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerContent .logo__footer img {
+  width: 300px;
+}
+
+.footerContent .footer__icon a {
+  color: #232946;
+  font-size: 3.2rem;
+  margin-right: 1.4rem;
+}
+
+.footerContent .footer__icon .active {
+  transition: all .2s ease-in-out;
+}
+
+.footerContent .footer__icon .active:hover {
+  transform: scale(120%);
+  color: #85ad2c;
+}
+
+.footer__copyright p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: #121629;
+  line-height: 2.4rem;
+  font-weight: 500;
+}
